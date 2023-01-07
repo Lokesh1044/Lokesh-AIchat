@@ -50,7 +50,7 @@ body {
 }
 
 .ai {
-  background-image: url('marvel.jpg');
+   background-image: url('./assets/marvel.jpg');
 }
 
 .chat {
