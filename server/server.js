@@ -33,17 +33,12 @@ app.post('/', async (req, res) => {
       // top_p: 1, 
       // frequency_penalty: 0.5, 
       // presence_penalty: 0,       
-      temperature:process.env.temperature, 
-      // Higher values means the model will take more risks.
-      max_tokens: process.env.max_tokens, 
-      // The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
-      top_p: process.env.top_p, 
-      // alternative to sampling with temperature, called nucleus sampling
-      frequency_penalty: process.env.frequency_penalty, 
-      // Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim.
-      presence_penalty: process.env.presence_penalty,
-       // Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.
-     });
+      temperature: 0, 
+      max_tokens: 3000, 
+      top_p: 1, 
+      frequency_penalty: 0.5, 
+      presence_penalty: 0,  
+    });
 
     res.status(200).send({
       bot: response.data.choices[0].text
