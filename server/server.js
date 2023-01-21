@@ -30,7 +30,7 @@ app.post('/', async (req, res) => {
   temperature: process.env.TEMPERATURE,
   max_tokens: process.env.MAX_TOKENS,
   top_p: process.env.TOP_P,
-  frequency_penalty: process.env.FREQUENCY_PENALTY,
+  frequency_penalty: 0.5,
   presence_penalty: process.env.PRESENCE_PENALTY
     });
 
