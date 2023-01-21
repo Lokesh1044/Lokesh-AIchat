@@ -62,7 +62,7 @@ body {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-
+background:  #A020F0;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
