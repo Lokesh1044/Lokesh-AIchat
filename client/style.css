@@ -50,8 +50,10 @@ body {
 }
 
 .ai {
-  background-image: url('./assets/marvel.jpg');
+  background:  #A020F0;
   width: 50%;
+  border-width: 1px;
+  border-color: aquamarine;
   border-radius: 10px;
   align-self:left;
 }
