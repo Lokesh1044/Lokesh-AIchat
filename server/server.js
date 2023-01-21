@@ -27,11 +27,11 @@ app.post('/', async (req, res) => {
 
     const response = await openai.createCompletion({
  model: process.env.MODEL,
-  temperature: parseFloat(process.env.TEMPERATURE),
-  max_tokens: parseFloat(process.env.MAX_TOKENS),
-  top_p: parseFloat(process.env.TOP_P),
-  frequency_penalty: parseFloat(process.env.FREQUENCY_PENALTY),
-  presence_penalty: parseFloat(process.env.PRESENCE_PENALTY)
+  temperature: process.env.TEMPERATURE,
+  max_tokens: process.env.MAX_TOKENS,
+  top_p: process.env.TOP_P,
+  frequency_penalty: process.env.FREQUENCY_PENALTY,
+  presence_penalty: process.env.PRESENCE_PENALTY
     });
 
     res.status(200).send({
