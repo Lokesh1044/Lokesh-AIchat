@@ -37,6 +37,8 @@ body {
 
   padding-bottom: 20px;
   scroll-behavior: smooth;
+  background-image: url('./assets/background.gif');
+  
 }
 
 /* hides scrollbar */
