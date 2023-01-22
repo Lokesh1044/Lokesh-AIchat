@@ -52,19 +52,19 @@ body {
 }
 
 .ai {
-  background:  #A020F0;
+  background:  transparent;
   width: 50%;
   border-width: 5px;
   border-color: #10a37f;
   border-radius: 10px;
-  align-self:left;
+  align-self:center;
 }
 
 .chat {
-  width: 100%;
-  max-width: 1280px;
+  width: 50%;
+/*   max-width: 1280px; */
   margin: 0 auto;
-background:  #A020F0;
+background:  transparent;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
